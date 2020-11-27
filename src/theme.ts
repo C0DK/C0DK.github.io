@@ -1,4 +1,3 @@
-
 export const color0 = "#2E3440";
 export const color1 = "#3B4252";
 export const color2 = "#434C5E";
@@ -18,7 +17,7 @@ export const color15 = "#B48EAD";
 
 export const fontName = "Saira Condensed";
 
-
-export const backgroundColor = color0
-export const primaryFontColor = color6
-export const secondaryFontColor = color5
+export const backgroundColor = color0;
+export const primaryFontColor = color6;
+export const secondaryFontColor = color5;
+export const IconHoverColor = color7;
