@@ -22,7 +22,7 @@ export default () => {
 }
 const getGreetingFromWeekday = (weekday: number) => {
     const greetings: { [Key: string]: ReactElement } = {
-        5: <Greeting>Have a nice friday! <Icon icon={faBeer} /></Greeting>, // Friday
+        5: <Greeting>Have a nice Friday! <Icon icon={faBeer} /></Greeting>, // Friday
     }
 
     return greetings[weekday]
@@ -52,7 +52,7 @@ const NewYearGreeting = () => <Greeting>Happy New Year!</Greeting>
 export const Greeting = styled.div`
   text-align: center;
   filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
-  padding: 20px 0px 0px;
+  padding: 0;
   color: ${color11}
 `;
 

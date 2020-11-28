@@ -8,8 +8,8 @@ export default () => (
   <MainContainer>
     <Header />
     <TagLine />
-    <LinkRow />
     <Greeting />
+    <LinkRow />
   </MainContainer>
 );
 
