@@ -43,7 +43,7 @@ export const Tag = styled.span`
 `;
 export const TagRow = styled.div`
   text-align: center;
-  padding: 20px 0px 0px;
+  padding: 10px 0px 0px;
 `;
 export const IconRow = styled.div`
   text-align: center;
