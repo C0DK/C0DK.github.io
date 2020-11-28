@@ -15,7 +15,7 @@ export default () => (
     <Icon href="https://keybase.io/cabang" icon={faKeybase} />
     <Icon href="https://github.com/C0DK/" icon={faGithub} />
     <Icon href="https://www.linkedin.com/in/cabang/" icon={faLinkedin} />
-    <Icon href="https://twitter.com/home" icon={faTwitter} />
+    <Icon href="https://twitter.com/cabang_dk/" icon={faTwitter} />
   </IconRow>
 );
 
