@@ -6,5 +6,7 @@ export default () => (
     <Tag>Software Engineer</Tag>
     <Tag>Freelancer</Tag>
     <Tag>Dad</Tag>
+    <Tag>Open-Source contributor</Tag>
+    <Tag>Nerd</Tag>
   </TagRow>
 );
