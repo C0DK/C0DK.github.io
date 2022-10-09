@@ -27,13 +27,14 @@ jobs:
         DISABLE_ESLINT_PLUGIN: true
       run: |
         yarn build
-        
-    - name: Upload artifact
-      uses: actions/upload-artifact@main
-      with:
-        name: github-pages
-        path: ${{ runner.temp }}/artifact.tar
-        retention-days: ${{ inputs.retention-days }}
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
     - name: deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
