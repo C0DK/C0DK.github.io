@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-export default () => (
+const LinkRow = () => (
   <IconRow>
     <Icon href="mailto:c@cwb.dk" icon={faEnvelope} />
     <Icon href="https://keybase.io/cabang" icon={faKeybase} />
@@ -24,3 +24,5 @@ const Icon = ({ href, icon }: { href: string; icon: any }) => (
     <FAIcon icon={icon} size="2x" />
   </PlainA>
 );
+
+export default LinkRow;

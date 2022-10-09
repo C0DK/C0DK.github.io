@@ -9,7 +9,7 @@ import { FAIcon, } from "./style";
 import { faHeart, faBirthdayCake, faSnowman, faBeer, faGhost, faPray} from "@fortawesome/free-solid-svg-icons";
 
 
-export default () => {
+const GreetingComponent = () => {
     const time = moment()
     let greeting = getGreetingFromDate(time)
     if (greeting === undefined)
@@ -65,3 +65,5 @@ export const Greeting = styled.div`
 const Icon = ({ icon }: { icon: any }) => (
     <FAIcon icon={icon} />
 );
+
+export default GreetingComponent;

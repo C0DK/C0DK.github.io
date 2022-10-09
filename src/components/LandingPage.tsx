@@ -4,7 +4,7 @@ import TagLine from "./TagLine";
 import LinkRow from "./LinkRow";
 import Greeting from "./Greeting"
 
-export default () => (
+const LandingPage = () => (
   <MainContainer>
     <Header />
     <TagLine />
@@ -14,3 +14,5 @@ export default () => (
 );
 
 const Header = () => <PageTitle>Casper Weiss Bang</PageTitle>;
+
+export default LandingPage;

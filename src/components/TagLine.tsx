@@ -1,7 +1,7 @@
 import React from "react";
 import { Tag, TagRow } from "./style";
 
-export default () => (
+const TagLine = () => (
   <TagRow>
     <Tag>Software Engineer</Tag>
     <Tag>Married (soon!)</Tag>
@@ -10,3 +10,6 @@ export default () => (
     <Tag>Friend</Tag>
   </TagRow>
 );
+
+
+export default TagLine;
