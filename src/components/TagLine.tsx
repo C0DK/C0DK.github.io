@@ -1,17 +1,21 @@
 import React from "react";
-import { Tag, TagRow } from "./style";
+import { Tag, TagRow, TagInnerRow } from "./style";
 
-const TagLine = () => (
+const TagLine = () => (<>
   <TagRow>
     <Tag>Software Engineer</Tag>
     <Tag>m.sc. (comp. sci.)</Tag>
-    <Tag>Married (soon!)</Tag>
-    <Tag>Dad</Tag>
     <Tag>Open-Source contributor</Tag>
-    <Tag>Friend</Tag>
-    <Tag>Sticker collector</Tag>
-    <Tag>Dane</Tag>
   </TagRow>
+  <TagInnerRow>
+    <Tag>Married (Pending)</Tag>
+    <Tag>Dad</Tag>
+    <Tag>Vinyl Collector</Tag>
+    <Tag>Cargo Bike Rider</Tag>
+    <Tag>home Renovator</Tag>
+    <Tag>Dane</Tag>
+  </TagInnerRow>
+</>
 );
 
 

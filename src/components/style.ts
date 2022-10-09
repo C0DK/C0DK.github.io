@@ -45,6 +45,11 @@ export const TagRow = styled.div`
   text-align: center;
   padding: 10px 0px 0px;
 `;
+export const TagInnerRow = styled.div`
+  text-align: center;
+  padding: 0px;
+`;
+
 export const IconRow = styled.div`
   text-align: center;
   padding: 20px 0px 0px;
