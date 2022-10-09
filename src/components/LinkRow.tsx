@@ -12,7 +12,6 @@ import { faEnvelope, faBook, faComment } from "@fortawesome/free-solid-svg-icons
 const LinkRow = () => (
   <IconRow>
     <Icon href="mailto:c@cwb.dk" icon={faEnvelope} />
-    <Icon href="https://keybase.io/cabang" icon={faKeybase} />
     <Icon href="https://github.com/C0DK/" icon={faGithub} />
     <Icon href="https://www.linkedin.com/in/cabang/" icon={faLinkedin} />
     <Icon href="https://twitter.com/cabang_dk/" icon={faTwitter} />

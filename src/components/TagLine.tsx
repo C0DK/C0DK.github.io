@@ -9,10 +9,8 @@ const TagLine = () => (
     <Tag>Dad</Tag>
     <Tag>Open-Source contributor</Tag>
     <Tag>Friend</Tag>
-    <Tag>cargo bike riding hippy</Tag>
-    <Tag>sticker collector</Tag>
+    <Tag>Sticker collector</Tag>
     <Tag>Dane</Tag>
-    <Tag>(Lousy) home renovator</Tag>
   </TagRow>
 );
 
