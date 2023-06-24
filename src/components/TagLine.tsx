@@ -8,12 +8,12 @@ const TagLine = () => (<>
     <Tag>Open-Source contributor</Tag>
   </TagRow>
   <TagInnerRow>
-    <Tag>Married (Pending)</Tag>
+    <Tag>Married</Tag>
     <Tag>Dad</Tag>
     <Tag>Vinyl Collector</Tag>
     <Tag>Cargo Bike Rider</Tag>
     <Tag>home Renovator</Tag>
-    <Tag>Dane</Tag>
+    <Tag>Danish</Tag>
   </TagInnerRow>
 </>
 );
