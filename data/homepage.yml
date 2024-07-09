@@ -5,10 +5,10 @@ head:
 # showcase
 showcase:
   enable: true
-  title: "Hello, I'm Casper."
+  title: "Hi, I'm Casper"
   subtitle: "Senior Data Engineer"
   description: >
-    Located in Aalborg, Denmark 🇩🇰 with my wife and our daughter.
+    Located in Aalborg, Denmark 🇩🇰 with my wife, mother-in-law and our daughter.
     We live in a big 100 year old house that I somehow convinced myself i would be able to renovate myself.
     It's going alright.
     I apply my software engineering background in the data world by day,
@@ -16,7 +16,7 @@ showcase:
     I love software, but also plants, nature 🌳, hikes, cargo bikes and books.
   image:
     x: "images/me_500x.jpg"
-    _2x: "images/showcase/showcase@2x.png"
+    _2x: "images/me_500x.jpg"
   imageMobile:
     x: "images/me_500x.jpg"
 
@@ -25,18 +25,21 @@ showcase:
     btnText: "Contact"
     URL: "c@cwb.dk"
 
-  socialLinks:
-    - icon: "linkedin"
-      URL: "https://www.linkedin.com/in/cwbdk/"
 
-    - icon: "github"
-      URL: "https://github.com/C0DK"
-
-    - icon: "stack-overflow"
-      URL: "https://stackoverflow.com/users/3806354/casper-bang"
-
-    - icon: "goodreads"
-      URL: "https://www.goodreads.com/user/show/129022892-casper-weiss-bang"
+links:
+  links:
+  - icon: "linkedin"
+    label: "Linkedin"
+    URL: "https://www.linkedin.com/in/cwbdk/"
+  - icon: "github"
+    label: "Github"
+    URL: "https://github.com/C0DK"
+  - label: "Substack"
+    URL: "https://cabang.substack.com"
+  - label: "Stack Overflow"
+    URL: "https://stackoverflow.com/users/3806354/casper-bang"
+  - label: "Goodreads"
+    URL: "https://www.goodreads.com/user/show/129022892-casper-weiss-bang"
 
 # about
 about:
@@ -86,7 +89,7 @@ experience:
     URL: "https://www.linkedin.com/in/cwbdk/"
   button2:
     icon: "icon-profile-fill"
-    btnText: "Download My Resume"
+    btnText: "Download CV"
     URL: "#"
   button3:
     icon: "icon-arrow-right"
@@ -202,4 +205,4 @@ contact:
     email: '<a href="mailto:c@cwb.dk">c@cwb.dk</a>'
   address:
     title: "Location"
-    address: "Aalborg, Denmark"
+    address: "Aalborg, Denmark 🇩🇰"
