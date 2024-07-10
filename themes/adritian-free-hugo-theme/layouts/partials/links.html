@@ -1,0 +1,16 @@
+<section id="links" class="section rad-animation-group">
+    <div class="container">
+        <div class="d-flex px-5 flex-wrap justify-content-around flex-md-row rad-fade-down rad-waiting rad-animate">
+            {{ range .Site.Data.homepage.links.links }}
+            <a href="{{ .URL | absURL }}" target="_blank" class="btn btn-frameless">
+                {{if .icon }}
+                <i class="icon-{{ .icon }}-line"></i>
+                {{ else}}
+                <i class="icon-arrow-right"></i>
+                {{ end }}
+                {{ .label }}
+            </a>
+            {{ end}}
+        </div>
+    </div>
+</section>
