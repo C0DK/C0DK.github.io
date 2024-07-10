@@ -1,0 +1,225 @@
+# page title
+head:
+  title: "Casper Weiss Bang"
+  description: "Software Engineer improving maintainability in Dataland"
+# showcase
+showcase:
+  enable: true
+  title: "Hi, I'm Casper"
+  #subtitle: "Senior Data Engineer"
+  description: >
+    Located in Aalborg, Denmark 🇩🇰 with my wife and our daughter.
+    We live in a big 100 year old house that I somehow convinced myself i would be able to renovate.
+    It's going alright.
+
+
+    I apply my software engineering background in the data world by day,
+    and write all sorts of software and open source contributions by night.
+
+
+    My latest hyper focus is permaculture 🌳 and gardening.
+    I love going camping, and exploring nature with my family
+  image:
+    x: "images/me_500x.jpg"
+    _2x: "images/me_500x.jpg"
+  imageMobile:
+    x: "images/me_500x.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "c@cwb.dk"
+
+
+links:
+  links:
+  - icon: "linkedin"
+    label: "Linkedin"
+    URL: "https://www.linkedin.com/in/cwbdk/"
+  - icon: "github"
+    label: "Github"
+    URL: "https://github.com/C0DK"
+  - label: "Substack"
+    URL: "https://cabang.substack.com"
+  - label: "Stack Overflow"
+    URL: "https://stackoverflow.com/users/3806354/casper-bang"
+  - label: "Goodreads"
+    URL: "https://www.goodreads.com/user/show/129022892-casper-weiss-bang"
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: >
+    <p class="lead">
+      Here you can add some information about you. A small excerpt that describes 
+      your experience, for example.   
+      </p>
+      <p class="lead">
+      You explain something about your academic/study background, as well as your
+      preferred areas of work. Think of this area as context-setting for the experience
+      that you will describe below. Why did you change jobs? What drove you to take a 
+      new gig? Even if you are not looking for a job, it's a good way to hint about
+      what kind of projects you are interested in.
+    </p>
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/in/cwbdk/"
+  image:
+    x: "images/who-am-i/user-picture.png"
+    _2x: "images/who-am-i/user-picture@2x.png"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "IT University of Copenhagen"
+      year: "2019-2021"
+      degree: "Master Of Science (M.Sc), Computer Science, Softwae Engineering"
+    - university: "Aalborg University"
+      year: "2016-2019"
+      degree: "Bachelor in Software Engineering"
+
+# experience
+experience:
+  enable: true
+  title: "Senior Data Engineer"
+  description: >
+    Experience Software Engineer, currently employeed in Data Engineering.
+    I aim to optimize maintainability of software, while focusing on modelling the underlying domain of a business.
+    In my view, it's crucial to understand the context to solve actual problems for real humans.
+
+
+    I like philosophies like Domain-Driven Design, DevOps, Continous Deployment and Extreme Programming.
+
+
+    I've worked with Dotnet(C#), Python, Go. I love functional languages, and have written a bunch of F#. I want to learn Rust, but haven't had the need, yet.
+    I've participated in platform engineering, utilizing both Bicep and Pulumi, as well as Docker, Kubernetes.
+
+
+    I've used Linux for 10 years, currently running NixOs on my personal machine.
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/cwbdk/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download CV"
+    URL: "#"
+  button3:
+    icon: "icon-arrow-right"
+    btnText: "See all experiences"
+    URL: "/experience"
+
+
+# Client & Work
+client_and_work:
+  title: "Clients & Works"
+  enable: true
+
+  clients:
+    - logo:
+        x: "images/clients/asgardia.png"
+        _2x: "images/clients/asgardia@2x.png"
+      alt: "Asgardia"
+
+    - logo:
+        x: "images/clients/earth-2.png"
+        _2x: "images/clients/earth-2@2x.png"
+      alt: "Earth 2.0"
+
+    - logo:
+        x: "images/clients/goldline.png"
+        _2x: "images/clients/goldline@2x.png"
+      alt: "Goldline"
+
+    - logo:
+        x: "images/clients/kanba.png"
+        _2x: "images/clients/kanba@2x.png"
+      alt: "Kanba"
+
+    - logo:
+        x: "images/clients/zoo-tv.png"
+        _2x: "images/clients/zoo-tv@2x.png"
+      alt: "Zoo"
+
+    - logo:
+        x: "images/clients/ztos.png"
+        _2x: "images/clients/ztos@2x.png"
+      alt: "Ztos"
+
+  works:
+    - title: "Radity Finance - UI Kit"
+      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "images/works/radity-finance.jpg"
+        _2x: "images/works/radity-finance@2x.jpg"
+      is_even: true
+
+    - title: "Swiss Fintech Website"
+      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "images/works/robo-advisor.jpg"
+        _2x: "images/works/robo-advisor@2x.jpg"
+      is_even: false
+
+    - title: "Robo Advisor"
+      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "images/works/radity-finance.jpg"
+        _2x: "images/works/radity-finance@2x.jpg"
+      is_even: true
+
+# testimonial
+testimonial:
+  enable: true
+  title: "Testimonials"
+  items:
+    - name: "Daniel Jordan"
+      position: "Phonet, CEO"
+      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image:
+        x: "images/testimonials/daniel-jordan.jpg"
+        _2x: "images/testimonials/daniel-jordan@2x.jpg"
+
+    - name: "Jonathan Peters"
+      position: "Textic, CEO"
+      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image:
+        x: "images/testimonials/jonathan-peters.jpg"
+        _2x: "images/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Antonio Willis"
+      position: "Cyberse, CEO"
+      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image:
+        x: "images/testimonials/antonio-willis.jpg"
+        _2x: "images/testimonials/antonio-willis@2x.jpg"
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  phone:
+    title: "Phone Number"
+    number: "+45 25 21 46 68"
+  email:
+    title: "Email"
+    email: '<a href="mailto:c@cwb.dk">c@cwb.dk</a>'
+  address:
+    title: "Location"
+    address: "Aalborg, Denmark 🇩🇰"
