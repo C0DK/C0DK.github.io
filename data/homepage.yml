@@ -6,14 +6,19 @@ head:
 showcase:
   enable: true
   title: "Hi, I'm Casper"
-  subtitle: "Senior Data Engineer"
+  #subtitle: "Senior Data Engineer"
   description: >
-    Located in Aalborg, Denmark 🇩🇰 with my wife, mother-in-law and our daughter.
-    We live in a big 100 year old house that I somehow convinced myself i would be able to renovate myself.
+    Located in Aalborg, Denmark 🇩🇰 with my wife and our daughter.
+    We live in a big 100 year old house that I somehow convinced myself i would be able to renovate.
     It's going alright.
+
+
     I apply my software engineering background in the data world by day,
     and write all sorts of software and open source contributions by night.
-    I love software, but also plants, nature 🌳, hikes, cargo bikes and books.
+
+
+    My latest hyper focus is permaculture 🌳 and gardening.
+    I love going camping, and exploring nature with my family
   image:
     x: "images/me_500x.jpg"
     _2x: "images/me_500x.jpg"
@@ -80,9 +85,21 @@ education:
 # experience
 experience:
   enable: true
-  title: "Experience"
+  title: "Senior Data Engineer"
   description: >
-    Experienced software developer in different paradigms and contexts. Currently working with C# and ASP.net Core. prior experience with Django and Python. Big interest in Domain Driven Development and especially Event sourcing. Experienced in management and leading based on event coordination from volunteering gigs. Has a large drive for problem-solving in any environment.
+    Experience Software Engineer, currently employeed in Data Engineering.
+    I aim to optimize maintainability of software, while focusing on modelling the underlying domain of a business.
+    In my view, it's crucial to understand the context to solve actual problems for real humans.
+
+
+    I like philosophies like Domain-Driven Design, DevOps, Continous Deployment and Extreme Programming.
+
+
+    I've worked with Dotnet(C#), Python, Go. I love functional languages, and have written a bunch of F#. I want to learn Rust, but haven't had the need, yet.
+    I've participated in platform engineering, utilizing both Bicep and Pulumi, as well as Docker, Kubernetes.
+
+
+    I've used Linux for 10 years, currently running NixOs on my personal machine.
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"

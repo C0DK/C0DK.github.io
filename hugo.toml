@@ -25,8 +25,8 @@ URL = "js/library/fontfaceobserver.js"
 [menu]
 
 [[menu.header]]
-URL = "#about"
-name = "About"
+URL = "#experience"
+name = "experiences"
 weight = 2
 
 [[menu.header]]
