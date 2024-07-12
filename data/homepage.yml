@@ -104,10 +104,10 @@ experience:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
     URL: "https://www.linkedin.com/in/cwbdk/"
-  button2:
-    icon: "icon-profile-fill"
-    btnText: "Download CV"
-    URL: "#"
+  #button2:
+    #icon: "icon-profile-fill"
+    #btnText: "Download CV"
+    #URL: "#"
   button3:
     icon: "icon-arrow-right"
     btnText: "See all experiences"
