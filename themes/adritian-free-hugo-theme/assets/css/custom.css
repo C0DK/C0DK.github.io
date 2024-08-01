@@ -172,7 +172,7 @@ ul.book-category-content {
 
 #links {
     @media (min-width: 768px) {
-        margin-top: -250px;
+        margin-top: -200px;
     }
 
     @media (max-width: 768px) {
