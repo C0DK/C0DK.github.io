@@ -154,6 +154,7 @@ li {
     grid-template-columns: 1fr;
     gap: 0;
   }
+
 }
 
 /* ---------- Header / Nav ---------- */
@@ -190,6 +191,7 @@ li {
   font-size: 0.85rem;
   cursor: pointer;
   font-family: inherit;
+  align-self: flex-start;
 }
 
 .theme-toggle:hover {
@@ -197,9 +199,6 @@ li {
 }
 
 /* ---------- Hero ---------- */
-.hero {
-  margin-bottom: 2.5rem;
-}
 
 .hero .tagline {
   color: var(--text-secondary);
@@ -366,8 +365,11 @@ footer {
     max-width: none;
   }
 
+  topbar {
+    margin-bottom: 0.6rem;
+  }
+
   /* Hide UI chrome */
-  .topbar,
   .theme-toggle,
   footer {
     display: none !important;
@@ -383,8 +385,6 @@ footer {
 
   /* ---------- Hero: a header strip with accent name ---------- */
   .hero {
-    margin-bottom: 0.6rem;
-    padding-bottom: 0.45rem;
     border-bottom: 2px solid var(--accent);
   }
 
