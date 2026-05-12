@@ -1,0 +1,555 @@
+/* ---------- Design tokens ---------- */
+:root {
+  /* chor.bar palette */
+  --bg: #f5f2ee;
+  --surface: #ede9e3;
+  --text: #1a1814;
+  --text-secondary: #4a4640;
+  --text-muted: #8a8480;
+  --border: #c8c4be;
+
+  /* Amber accent */
+  --accent: #b8651e;
+  --accent-soft: #f0e3d4;
+  --accent-strong: #8a4a14;
+
+  --shadow: 0 1px 2px rgba(60, 40, 20, .04), 0 4px 14px rgba(60, 40, 20, .06);
+
+  --radius: 14px;
+  --radius-sm: 8px;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --max-w: 1200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181614;
+    --surface: #221f1c;
+    --text: #ede9e3;
+    --text-secondary: #b0aca6;
+    --text-muted: #6a6560;
+    --border: #383430;
+    --accent: #e89548;
+    --accent-soft: #3a2818;
+    --accent-strong: #f0a866;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .35);
+  }
+}
+
+html[data-theme="dark"] {
+  --bg: #181614;
+  --surface: #221f1c;
+  --text: #ede9e3;
+  --text-secondary: #b0aca6;
+  --text-muted: #6a6560;
+  --border: #383430;
+  --accent: #e89548;
+  --accent-soft: #3a2818;
+  --accent-strong: #f0a866;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 14px rgba(0, 0, 0, .35);
+}
+
+html[data-theme="light"] {
+  --bg: #f5f2ee;
+  --surface: #ede9e3;
+  --text: #1a1814;
+  --text-secondary: #4a4640;
+  --text-muted: #8a8480;
+  --border: #c8c4be;
+  --accent: #b8651e;
+  --accent-soft: #f0e3d4;
+  --accent-strong: #8a4a14;
+  --shadow: 0 1px 2px rgba(60, 40, 20, .04), 0 4px 14px rgba(60, 40, 20, .06);
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Layout ---------- */
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  gap: 2rem;
+}
+
+@media (max-width: 720px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* ---------- Header / Nav ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.brand {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.brand-dot {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.theme-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  margin-bottom: 2.5rem;
+}
+
+.hero .tagline {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 60ch;
+  margin-top: 0.75rem;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.meta-row a {
+  color: var(--text-secondary);
+}
+
+.meta-row a:hover {
+  color: var(--accent-strong);
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin-bottom: 2rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.card.skip-print::before {
+  content: "not in PDF";
+  position: absolute;
+  top: 0.7rem;
+  right: 0.9rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card h3 {
+  margin-bottom: 0.15rem;
+}
+
+.role-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.role-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.role-company {
+  color: var(--accent-strong);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+}
+
+.role-body {
+  margin-top: 0.75rem;
+  color: var(--text);
+}
+
+.role-body p {
+  margin-bottom: 0.5rem;
+}
+
+.role-body ul li {
+  color: var(--text);
+}
+
+.role-detail {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Tags ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.tag {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* ---------- Toolbox ---------- */
+.toolbox p {
+  margin-bottom: 0.6rem;
+}
+
+.toolbox p:last-child {
+  margin-bottom: 0;
+}
+
+.toolbox strong {
+  color: var(--accent-strong);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ====================================================
+   PRINT STYLES
+   ==================================================== */
+@page {
+  size: A4;
+  margin: 10mm 11mm;
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --border: #c4beb6;
+    --text: #1a1814;
+    --text-secondary: #3d3935;
+    --text-muted: #6a6560;
+    --accent: #8a4a14;
+    --accent-soft: #f3e5d2;
+    --accent-strong: #8a4a14;
+    --shadow: none;
+  }
+
+  body {
+    background: #fff;
+    font-size: 9.4pt;
+    line-height: 1.32;
+    color: var(--text);
+  }
+
+  .page {
+    padding: 0;
+    max-width: none;
+  }
+
+  /* Hide UI chrome */
+  .topbar,
+  .theme-toggle,
+  footer {
+    display: none !important;
+  }
+
+  .skip-print {
+    display: none !important;
+  }
+
+  .card.skip-print::before {
+    display: none !important;
+  }
+
+  /* ---------- Hero: a header strip with accent name ---------- */
+  .hero {
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  h1 {
+    font-size: 19pt;
+    color: var(--accent-strong);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.15rem;
+  }
+
+  .hero .tagline {
+    font-size: 9pt;
+    margin-top: 0.25rem;
+    max-width: none;
+    color: var(--text-secondary);
+    line-height: 1.35;
+  }
+
+  .meta-row {
+    gap: 0.65rem 1rem;
+    margin-top: 0.4rem;
+    font-size: 8.6pt;
+    color: var(--text-secondary);
+  }
+
+  .meta-row a {
+    color: var(--text-secondary);
+  }
+
+  /* ---------- Two-column body ---------- */
+  .columns {
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+    gap: 0.9rem;
+  }
+
+  /* ---------- Section labels: filled bar with accent ---------- */
+  section {
+    margin-bottom: 0.7rem;
+  }
+
+  section:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    border-left: 3px solid var(--accent);
+    font-size: 8.4pt;
+    letter-spacing: 0.14em;
+    padding: 0.18rem 0.45rem;
+    margin-bottom: 0.45rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 10pt;
+    margin-bottom: 0.05rem;
+    color: var(--text);
+  }
+
+  /* ---------- Cards: keep light surface + thin border for definition ---------- */
+  .card {
+    background: var(--surface);
+    box-shadow: none;
+    border: 1px solid var(--border);
+    border-left: 2px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.45rem 0.7rem;
+    margin-bottom: 0.45rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .card::before {
+    display: none !important;
+  }
+
+  .role-head {
+    gap: 0.4rem;
+    margin-bottom: 0;
+    align-items: baseline;
+  }
+
+  .role-company {
+    color: var(--accent-strong);
+    font-size: 9pt;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  .role-meta {
+    font-size: 8.6pt;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  .role-body {
+    margin-top: 0.2rem;
+  }
+
+  .role-body ul {
+    padding-left: 0.95rem;
+  }
+
+  .role-body ul li {
+    margin-bottom: 0.08rem;
+  }
+
+  .role-body p {
+    margin-bottom: 0.2rem;
+  }
+
+  .role-detail {
+    font-size: 8.6pt;
+  }
+
+  /* ---------- Tags: keep pills but smaller and tighter ---------- */
+  .tags {
+    margin-top: 0.3rem;
+    gap: 0.2rem 0.3rem;
+  }
+
+  .tag {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    padding: 0.04rem 0.4rem;
+    font-size: 7.8pt;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  /* ---------- Toolbox: tighter ---------- */
+  .toolbox p {
+    margin-bottom: 0.3rem;
+    font-size: 8.8pt;
+    line-height: 1.3;
+  }
+
+  .toolbox strong {
+    font-size: 7.8pt;
+    color: var(--accent-strong);
+    display: block;
+    margin-bottom: 0.05rem;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+}
