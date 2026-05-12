@@ -6,18 +6,18 @@ head:
 showcase:
   enable: true
   title: "Hi, I'm Casper"
-  #subtitle: "Senior Data Engineer"
   description: >
-    Located in Aalborg, Denmark 🇩🇰 with my wife and our daughter.
+    Located in Aalborg, Denmark 🇩🇰 with my wife and our daughter, and my mother-in-law, who lives in our basement.
     We live in a big 100 year old house that I somehow convinced myself i would be able to renovate.
     It's going alright.
 
 
-    I apply my software engineering background in the data world by day,
+    I apply my software engineering skills in the energy business,
     and write all sorts of software and open source contributions by night.
+    Lately I'm working on <a href="https://chor.bar/">chor.bar</a> - a Chore-management system.
 
 
-    My latest hyper focus is permaculture 🌳 and gardening.
+    My latest hyper focus is permaculture 🌳 and gardening 🍅.
     I love going camping, and exploring nature with my family
   image:
     x: "images/me_500x.jpg"
@@ -85,18 +85,17 @@ education:
 # experience
 experience:
   enable: true
-  title: "Senior Data Engineer"
+  title: "Software Engineer @ ❤️"
   description: >
-    Experienced **Software Engineer**, currently employed in Data Engineering.
     I aim to optimize maintainability of software, while focusing on modelling the underlying domain of a business.
     In my view, it's crucial to understand the context to solve actual problems for real humans.
 
-
     I like philosophies like Domain-Driven Design, DevOps, Continous Deployment and Extreme Programming.
+    Lately I'm digging into HTMX, event sourcing and reading the PostgreSQL manual.
 
 
-    I've worked with Dotnet(C#), Python, Go. I love functional languages, and have written a bunch of F#. I want to learn Rust, but haven't had the need, yet.
-    I've participated in platform engineering, utilizing both Bicep and Pulumi, as well as Docker, Kubernetes.
+    I've worked with C#, Python, Go. I love functional and declarative languages, and have written a bunch of F#.
+    I've participated in platform engineering, utilizing both Terraform, Pulumi and Bicep, as well as Docker, Kubernetes.
 
 
     I've used Linux for 10 years, currently running NixOs on my personal machine.
