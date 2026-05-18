@@ -317,6 +317,7 @@ section:last-child {
 .toolbox strong {
   color: var(--accent-strong);
   font-size: 0.85rem;
+  display: block;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
